@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=League+Spartan:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    /* background-color: #F7B909; */
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* height: auto; */
+    height:100%;
+
+}
+
+body {
+    background: url(../images/background.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top left;
+    background-repeat: repeat;
+
+
+    
+}
+
+
+
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid #F56D94 3px;
+
+}
+
+.right-nav {
+    display: flex;
+    justify-content: flex-end; /* Align the nav items on the right */
+    align-items: flex-start; /* Prevent filling the entire height of the section */
+    height: auto; 
+}
+
+
+
+
+
+
+
+
+
+/* HEADER AND NAVIGATION */
+a {
+    text-decoration: none;
+    color: #F0EAD6;
+    font-family: "Dancing Script", cursive;
+    font-size: 2em;
+}
+
+a:visited {
+    color: #F0EAD6;
+}
+
+h1 {
+    font-family: "Dancing Script", cursive;
+    padding-top: 3%;
+    font-size: 7vw;
+}
+
+.header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    width: 100%;
+
+}
+
+.left-nav, .right-nav{
+    z-index: 10;
+}
+
+
+
+
+.banner-video-container {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /*16:9 aspect ratio*/
+    /* overflow: hidden; */
+    z-index: 5;
+    background-color: #F8D102;
+}
+
+.banner-video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* overflow: hidden; */
+}
+
+.banner-text-container {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.banner-nav {
+    margin: 5px;
+
+    display: inline-block; /* Ensures the links are inline and don't stack */
+    padding: 5px 10px; /* Reduce padding */
+    padding-bottom: 5px;
+    /* margin: 0; Remove margin to prevent excess spacing */
+    background-color: #F56D94CC;
+    border-radius: 10px;
+
+}
+
+.banner-nav:hover {
+    background-color: #F0EAD6;
+    color:#F56D94CC
+}
+
+.video {
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+}
+
+.left-video, .right-video {
+    display: flex;
+    align-items: flex-end;
+}
+
+.ig {
+    width: 50px;
+    height: auto;
+
+}
+
+.follow {
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.info {
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+
+p {
+    font-family: "League Spartan", sans-serif;
+    color: #F0EAD6;
+}
+
+/* ABOUT US */
+
+.homepage {
+    border-left: solid blue 20px;
+    border-right: solid red 20px;
+    /* margin-left: 3%;
+    margin-right: 3%; */
+    padding-left: 3%;
+    padding-right: 3%;
+
+    min-height: 100vh;
+    background-color: #F8D102CC;
+    position: relative;
+    z-index: 50;
+
+
+}
+
+.about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.about-us-text {
+    color: black;
+    text-align: center;
+    font-size: larger;
+    max-width: 350px;
+    min-width: 300px;
+    padding-top: 5%;
+    background-color: #F8D102;
+}
+
+.about-us-pic {
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+
+}
+
+.about {
+
+    padding-bottom: 10px;
+}
+
+/* MENU (on homepage) */
+
+.homepage-menu {
+    position: relative;
+    overflow:hidden;
+    border-bottom: solid #F56D94 3px;
+}
+
+.homepage-menu-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    width: 100%;
+}
+
+.homepage-menu-pic-container {
+    /* position: absolute; */
+    z-index: 5;
+}
+
+.homepage-menu-pic, .homepage-menu-pic-darker {
+    width: 300px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.homepage-menu-pic-darker {
+    position: absolute;
+    z-index: 5;
+}
+
+.homepage-menu-pic {
+    position: relative;
+    z-index: 10;
+}
+
+/* .homepage-menu-pic:hover {
+    opacity: 0;
+} */
+
+.homepage-menu-text {
+    font-family: "Dancing Script", cursive;
+    font-size: 3vw;
+}
+
+
+.overlay {
+    position: absolute;
+    z-index: 5;
+    text-align: center;
+    max-width: 20%;
+    padding-top: 7%;
+}
+
+/* MENU */
+.menu-header {
+    /* position: absolute;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    width: 100%; */
+
+}
+
+.page-content {
+    /* background-color: #F8D102CC; */
+}
+
+li {
+    font-family: "League Spartan", sans-serif;
+    padding: 5%;
+    font-size: larger;
+    list-style: none;
+}
+
+.menu-arrow {
+    display: flex;
+}
+
+.arrow-text {
+    padding-top: 10px;
+    font-size: 55px;
+    /* padding-bottom: 0px; */ 
+    /* font-size: clamp(20px, 4vw, 40px); */
+    font-family: "Dancing Script", cursive;
+    color: #F0EAD6;
+    text-align: center;
+
+    
+    /* background-color: #F8D102CC; */
+}
+
+.arrow-text-container {
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    align-items: center;
+    width:300px;
+    height:250px;
+    justify-content: center;
+}
+
+.arrow {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    width: 400px;
+    height: auto;
+}
+
+.arrow-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .wave-container {
+    position: relative;
+    height: 10vh;
+    width: 100%;
+
+
+
+} */
+
+/* .wave {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+
+
+} */
+
+/* GALLERY */
+
+.grid-pic, .grid-pic-4 {
+    width: 200px;
+    height: auto;
+    margin: 5px;
+}
+
+
+/* CONTACT */
+
+.contact-page {
+    /* background-color: #F8D102CC; */
+}
+
+label {
+    display: block;
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+
+textarea {
+    width: 250px;
+    height: 100px;
+}
+.fieldset-1 {
+    border: solid blue 7px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.fieldset-2 {
+    border: solid red 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.referrer {
+    margin-bottom: -10px;
+}
+
+
+.contact-button {
+    margin: 10px;
+}
+
+.comments, .firstLast, .referrer, .eAddress {
+    font-family: "League Spartan", sans-serif;
+
+}
+
+.comments-label {
+    font-family: "Dancing Script", cursive;
+    font-size: larger;
+}
+
+
+/* base size for SMALL MOBILE */
+.header-logo {
+    width: 50px;
+    height: auto;
+}
+
+/* MEDIUM MOBILE (e.g., larger mobile phones) */
+@media (min-width: 320px) {
+    .homepage {
+        border-left: solid blue 10px;
+        border-right: solid red 10px;
+    }
+
+    .header-logo {
+        width: 100px;
+        height: auto;
+    }
+
+    .right-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ig {
+        width: 25px;
+    }
+
+
+
+    .about-us {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    .arrow {
+        width: 200px;
+        height: auto;
+    }
+
+    /* .arrow-text {
+        font-size: 5vw;
+        max-width: 70%;
+    } */
+
+    .grid-pic, .grid-pic-2, .grid-pic-3, .grid-pic-4 {
+        width: 200px;
+        height: auto;
+        margin: 5px;
+    }
+
+    .grid-container, .top-row, .bottom-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .homepage-menu-pic {
+        width: 300px;
+        height: auto;
+    }
+
+}
+
+/* LARGE MOBILE to DESKTOP (e.g., tablets) */
+@media (min-width: 768px) {
+    .homepage {
+        border-left: solid blue 20px;
+        border-right: solid red 20px;
+    }
+
+    .header-logo {
+        width: 150px;
+        height: auto;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+    
+    }
+
+    .about-us {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .right-nav{
+        flex-direction: row;
+    }
+
+
+
+
+    .arrow {
+        width: 400px;
+    }
+
+    /* .arrow-text {
+        font-size: 3vw;
+        max-width: 50%;
+        text-align: center;
+    } */
+
+    .homepage-menu-pic {
+        width: 300px;
+        height: auto;
+    }
+
+    .grid-pic, .grid-pic-2, .grid-pic-3, .grid-pic-4 {
+        width: 200px;
+        height: auto;
+        margin: 5px;
+    }
+    
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .top-row, .bottom-row {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .grid-pic-4 {
+        position: relative;
+        top: -52px;
+    }
+
+    .grid-pic-2 {
+        margin-bottom: -60px;
+    }
+
+    .grid-pic-3 {
+        margin-bottom: -10px;
+    }
+
+    
+    
+}

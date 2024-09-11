@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../images/android-chrome-512x512.png"> 
+    <link rel="icon" type="image/png" sizes="192x192" href="../images/android-chrome-192x192.png"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="../images/site.webmanifest">
+</head>
+<body>
+    <div class="homepage">
+    <div class="page-header">
+        <div class="left-nav">
+            <a href="./index.html">
+                <img class="header-logo" src="../images/noxvargasRolos2ND_Logo_10_R1A.png" alt="Image of a donut topped with pink icing and sprinkles. The donut dons a hat and toucan and is raised by 4 people, 2 men and 2 women, wearing Colombian garb" />
+            </a>
+        </div>
+
+        <div class="right-nav">
+            <!-- <a class="banner-nav" href="#about">About</a> -->
+            <a class="banner-nav" href="./menu.html">Menu</a>
+            <a class="banner-nav" href="./gallery.html">Gallery</a>
+            <a class="banner-nav" href="./contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="contact-page">
+
+
+        <h1>Get in touch!</h1>
+
+        <form method="POST" action="/send-email" >
+        <!-- <form method="POST" action="https://api.web3forms.com/submit" > -->
+            <!-- <input type="hidden" name="access_key" value="c7b22b19-7a0d-4af7-ba5a-d9236326f7ca"> -->
+            <fieldset class="fieldset-1">
+                <legend class="comments-label">Nice to meet you!</legend>
+                    <label for="firstLast" class="firstLast">First and Last Name
+                        <input type="text" name="firstLast" class="firstLast" size="30" placeholder="Jane Doe" autofocus required>
+                    </label>
+
+                    <label for="eAddress" class="eAddress">Email Address
+                        <input type="email" pattern="[^ @]+@[^ @]+.[a-z]+" name="eAddress" id="email" size="30" maxlength="100" placeholder="name@host.com" required />
+                    </label>
+
+                    <label for="referrer" class="referrer">How did you hear about us?</label>
+                    <select name="referrer" name="referrer" required>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Tik Tok">Tik Tok</option>
+                        <option value="Friend">Friend</option>
+                        <option value="Pop-up">Pop-up</option>
+                        <option value="Other">Other</option> 
+                    </select>
+            </fieldset>
+
+            <fieldset class="fieldset-2">
+                <legend class="comments-label">Tell us what you think</legend>
+                <label for="comments" class="comments">Leave us flavor suggestions, constructive feedback, or just a nice comment!</label>
+                <textarea name="comments" class="comments" id="comments" minlength="1" maxlength="300" placeholder="Write 300 characters or less" required></textarea>
+            </fieldset>
+
+            <button type="submit" class="contact-button">Submit</button>
+        </form>
+    </div>
+</div>
+    
+</body>
+</html>
